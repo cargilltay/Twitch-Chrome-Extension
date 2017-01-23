@@ -1,0 +1,23 @@
+extension info:
+
+Client ID: 7fhzyovpn39lo6ab7wpdfovxiqovbf
+Secret: wgspli04dxjgtllsgwer98estiepsg
+
+
+https://www.twitch.tv/kraken/oauth2/clients
+
+$.ajax({
+			type: "GET",
+			url: "https://api.twitch.tv/kraken/users/Taylor_is_Live/follows/channels",
+			headers: {
+				'client-id': clientId
+			},
+			success: function(data) {
+				data = eval(data);
+				console.log(data);
+				updateChannels(data);
+			},
+			failure: function(errMsg) {
+				alert(errMsg);
+			}
+		})

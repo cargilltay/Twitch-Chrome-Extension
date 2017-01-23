@@ -1,0 +1,18 @@
+{
+  "name": "Twitch-Extension",
+  "version": "0.1",
+  "description": "Easily see and navigate to streamers.",
+  "icons": { "128": "twitch-2048-black.png" }, 
+  "background": {
+    "persistent": false,
+    "scripts": ["jquery-3.1.1.min.js","twitch_actions.js", "twitch.min.js"]
+  },
+  "permissions": ["http://*.google.com/", "https://*.google.com/"],
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "twitch-2048-black.png",
+    "default_popup": "extension.html"
+  },
+  "manifest_version": 2
+  
+}
